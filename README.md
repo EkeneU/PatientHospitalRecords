@@ -10,6 +10,11 @@ Database was done using mysql, the file can be found in the src folder.
 
 Basic security was removed during development as it was interferring was POST request implementation.
 
+## Prerequisites
+Java 17
+Maven
+
+
 ## Setup
 Clone the repo
 [https://github.com/EkeneU/PatientHospitalRecords.git]
