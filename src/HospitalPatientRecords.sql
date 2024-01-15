@@ -1,0 +1,1 @@
+SELECT * FROM hospital_patient_medical_records.emergency;
