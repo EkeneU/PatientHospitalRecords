@@ -29,13 +29,13 @@ Build the application
 Start the application
 `java -jar PatientHospitalRecords-0.0.1-SNAPSHOT.jar`
 
-The applicatio should start on port 8080
+The application should start on port 8080
 
 ## Building the Docker Image
 CD into the root directory of this module
 
 Build a mysql image
-docker pull mysql
+`docker pull mysql
 
 
 
