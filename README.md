@@ -13,15 +13,14 @@ Basic security was removed during development as it was interferring was POST re
 ## Prerequisites
 Java 17
 Maven
+Docker
 
 
 ## Setup
 Clone the repo
 [https://github.com/EkeneU/PatientHospitalRecords.git]
 
-Run the application in intellij IDEA
 
-Download and install mysql workbench.
 username = root
 password = Cristianocr7ronaldo!
 
