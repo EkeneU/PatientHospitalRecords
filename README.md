@@ -35,9 +35,24 @@ The application should start on port 8080
 CD into the root directory of this module
 
 Build a mysql image
-`docker pull mysql
+`docker pull mysql`
 
+Create a MySQL container 
+`docker run -p 3307:3306 -d --name phr-db-cont -e MYSQL_ROOT_PASSWORD=Cristianocr7ronaldo! -e MYSQL_DATABASE=hospital_patient_management_records mysql`
 
+Create a docker network
+`docker network create phr-network`
+
+Connect the MySQL container to the network
+`docker network connect phr-network phr-db-cont`
+
+Build the docker app image 
+`docker build -t phr-app-image:1.0 .`
+
+Create an app container then connect it to the docker network
+` docker run -p 9090:8080 -d --name phr-app-cont --net phr-network -e MYSQL_HOST=phr-db-cont -e MYSQL_USER=root MYSQL_PASSWORD=Cristianocr7ronaldo! -e MYSQL_PORT=3306 phr-app-image:1.0`
+
+App should run on port 9090
 
 
 username = root
