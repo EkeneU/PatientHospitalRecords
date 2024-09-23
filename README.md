@@ -13,15 +13,48 @@ Basic security was removed during development as it was interferring was POST re
 ## Prerequisites
 Java 17
 Maven
+Docker
 
 
 ## Setup
 Clone the repo
 [https://github.com/EkeneU/PatientHospitalRecords.git]
 
-Run the application in intellij IDEA
+Run the tests
+`./mvnw clean test`
 
-Download and install mysql workbench.
+Build the application
+`./mvnw clean build`
+
+Start the application
+`java -jar PatientHospitalRecords-0.0.1-SNAPSHOT.jar`
+
+The application should start on port 8080
+
+## Building the Docker Image
+CD into the root directory of this module
+
+Build a mysql image
+`docker pull mysql`
+
+Create a MySQL container 
+`docker run -p 3307:3306 -d --name phr-db-cont -e MYSQL_ROOT_PASSWORD=Cristianocr7ronaldo! -e MYSQL_DATABASE=hospital_patient_management_records mysql`
+
+Create a docker network
+`docker network create phr-network`
+
+Connect the MySQL container to the network
+`docker network connect phr-network phr-db-cont`
+
+Build the docker app image 
+`docker build -t phr-app-image:1.0 .`
+
+Create an app container then connect it to the docker network
+` docker run -p 9090:8080 -d --name phr-app-cont --net phr-network -e MYSQL_HOST=phr-db-cont -e MYSQL_USER=root MYSQL_PASSWORD=Cristianocr7ronaldo! -e MYSQL_PORT=3306 phr-app-image:1.0`
+
+App should run on port 9090
+
+
 username = root
 password = Cristianocr7ronaldo!
 
