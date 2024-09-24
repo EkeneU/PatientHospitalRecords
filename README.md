@@ -69,3 +69,8 @@ App should run on port 9090
 username = root
 password = Cristianocr7ronaldo!
 
+## Available Endpoints
+
+//Security
+  
+
