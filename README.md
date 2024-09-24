@@ -71,6 +71,85 @@ password = Cristianocr7ronaldo!
 
 ## Available Endpoints
 
-//Security
+* Security
+ * POST - http://localhost:8080/hospitalsecurity/api/auth/register (To register a user to get a token)
+ * POST - http://localhost:8080/hospitalsecurity/api/auth/authenticate (To authenticate the user token)
+
+* General
+  * GET - http://localhost:8080/phr/general_patients
+  * GET - http://localhost:8080/phr/general_patients/{patient_id}
+  * POST - http://localhost:8080/phr/general_patient
+  * DELETE - http://localhost:8080/phr/general_patient/{patient_id}
+ 
+* Emergency
+  * GET - http://localhost:8080/phr/emergency_patients
+  * GET - http://localhost:8080/phr/emergency_patients/{patient_id}
+  * POST - http://localhost:8080/phr/emergency_patient
+  * PUT - http://localhost:8080/phr/emergency_patient
+  * DELETE - http://localhost:8080/phr/emergency_patient/{patient_id}
+
+* Emergency follow up
+  * GET - http://localhost:8080/phr/efun_patients
+  * GET - http://localhost:8080/phr/efun_patients/{patient_id}
+  * POST - http://localhost:8080/phr/efun_patient
+  * PUT - http://localhost:8080/phr/efun_patient
+  * DELETE - http://localhost:8080/phr/efun_patient/{patient_id}
+ 
+* Internal Medicine
+  * GET - http://localhost:8080/phr/im_patients
+  * GET - http://localhost:8080/phr/im_patients/{patient_id}
+  * POST - http://localhost:8080/phr/im_patient
+  * PUT - http://localhost:8080/phr/im_patient
+  * DELETE - http://localhost:8080/phr/im_patient/{patient_id}
+ 
+* Internal Medicine follow up
+  * GET - http://localhost:8080/phr/imfun_patients
+  * GET - http://localhost:8080/phr/imfun_patients/{patient_id}
+  * POST - http://localhost:8080/phr/imfun_patient
+  * PUT - http://localhost:8080/phr/imfun_patient
+  * DELETE - http://localhost:8080/phr/imfun_patient/{patient_id}
+ 
+* Obstetrics & Gynaecology
+  * GET - http://localhost:8080/phr/obsgynae_patients
+  * GET - http://localhost:8080/phr/obsgynae_patients/{patient_id}
+  * POST - http://localhost:8080/phr/obsgynae_patient
+  * PUT - http://localhost:8080/phr/obsgynae_patient
+  * DELETE - http://localhost:8080/phr/obsgynae_patient/{patient_id}
+ 
+* Obstetrics & Gynaecology follow up
+  * GET - http://localhost:8080/phr/ogfun_patients
+  * GET - http://localhost:8080/phr/ogfun_patients/{patient_id}
+  * POST - http://localhost:8080/phr/ogfun_patient
+  * PUT - http://localhost:8080/phr/ogfun_patient
+  * DELETE - http://localhost:8080/phr/ogfun_patient/{patient_id}
+ 
+* Paediatrics
+  * GET - http://localhost:8080/phr/paediatrics_patients
+  * GET - http://localhost:8080/phr/paediatrics_patients/{patient_id}
+  * POST - http://localhost:8080/phr/paediatrics_patient
+  * PUT - http://localhost:8080/phr/paediatrics_patient
+  * DELETE - http://localhost:8080/phr/paediatrics_patient/{patient_id}
+ 
+* Paediatrics follow up
+  * GET - http://localhost:8080/phr/pfun_patients
+  * GET - http://localhost:8080/phr/pfun_patients/{patient_id}
+  * POST - http://localhost:8080/phr/pfun_patient
+  * PUT - http://localhost:8080/phr/pfun_patient
+  * DELETE - http://localhost:8080/phr/pfun_patient/{patient_id}
+ 
+* Surgery
+  * GET - http://localhost:8080/phr/surgery_patients
+  * GET - http://localhost:8080/phr/surgery_patients/{patient_id}
+  * POST - http://localhost:8080/phr/surgery_patient
+  * PUT - http://localhost:8080/phr/surgery_patient
+  * DELETE - http://localhost:8080/phr/surgery_patient/{patient_id}
+ 
+* Surgery follow up
+  * GET - http://localhost:8080/phr/sfun_patients
+  * GET - http://localhost:8080/phr/sfun_patients/{patient_id}
+  * POST - http://localhost:8080/phr/sfun_patient
+  * PUT - http://localhost:8080/phr/sfun_patient
+  * DELETE - http://localhost:8080/phr/sfun_patient/{patient_id}
+ 
   
 
